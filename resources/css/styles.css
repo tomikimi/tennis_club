@@ -1,0 +1,275 @@
+/* GENERAL CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-light-grey: #fafafa;
+  --color-mint-green: #275049;
+  --color-dark-green: #2d5752;
+  --color-lime: #e1e57c;
+}
+
+/* Default Font Size */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Cabin", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-black);
+  background-color: var(--color-light-grey);
+}
+
+/* Header Style */
+header {
+  background-color: var(--color-dark-green);
+  border-bottom-left-radius: 1.5rem;
+}
+
+.navigation {
+  width: auto;
+  position: absolute;
+  top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+  padding: 0rem 2.5rem;
+}
+
+.navigation2 {
+  position: fixed;
+  background-color: transparent;
+  padding: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+  z-index: 200;
+}
+
+.logo2 {
+  padding-left: 2rem;
+}
+
+.logo-link2 {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+
+.logo-link2 img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.navigation2 ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation2 ul li:not(:last-of-type) {
+  padding-left: 5.5rem;
+}
+
+.navigation2 ul li:last-of-type {
+  padding-left: 15rem;
+}
+
+.navigation2 ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--color-white);
+}
+
+.navigation2 ul li:not(:last-of-type) a:hover {
+  color: var(--color-lime);
+}
+
+.btn-link2 {
+  border-radius: 2rem;
+  padding: 0.5rem 1.2rem;
+  background-color: var(--color-mint-green);
+  box-shadow: 0rem 0rem 0.5rem 0.1rem var(--color-light-grey);
+}
+
+.btn-link2:hover {
+  background-color: var(--color-light-grey);
+  color: var(--color-mint-green);
+  box-shadow: 0rem 0rem 0.5rem 0.1rem var(--color-lime);
+}
+
+.hero-container {
+  height: 100vh;
+  /* position: relative; */
+  display: flex;
+}
+.hero-text {
+  align-self: center;
+  justify-items: flex-start;
+  flex-basis: 50%;
+  padding: 0rem 8rem;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--color-lime);
+}
+
+.hero-text p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--color-light-grey);
+}
+
+.hero-img-container {
+  flex-basis: 50%;
+  overflow: hidden;
+}
+
+.hero-img-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-address {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding-top: 5rem;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.location-img {
+  background-color: var(--color-mint-green);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 31%;
+  height: 51px;
+  overflow: hidden;
+}
+
+.location-img img {
+  max-width: 110%;
+  height: auto;
+  display: block;
+}
+
+.location h4 {
+  color: var(--color-white);
+  font-size: 1rem;
+}
+
+.location p {
+  color: var(--color-white);
+  font-size: 0.7rem;
+  opacity: 50%;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-img {
+  background-color: var(--color-mint-green);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 31%;
+  height: 51px;
+  overflow: hidden;
+}
+
+.contact-img img {
+  max-width: 110%;
+  height: auto;
+  display: block;
+}
+
+.contact h4 {
+  color: var(--color-white);
+  font-size: 1rem;
+}
+
+.contact p {
+  color: var(--color-white);
+  font-size: 0.7rem;
+  opacity: 50%;
+}
+
+/* Main Content Style */
+#main-content {
+  margin: 0rem 4rem;
+  background-color: var(--color-light-grey);
+}
+
+/* Club Attractions Style */
+.club-attraction-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 0rem;
+}
+
+.club-attraction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attraction-img {
+  background-color: var(--color-mint-green);
+  border-radius: 50%;
+  padding: 1.5rem 1.1rem;
+  width: 25%;
+  height: 95px;
+  overflow: hidden;
+}
+
+.attraction-img img {
+  justify-self: center;
+  max-width: 70%;
+  height: auto;
+  display: block;
+}
+
+.attraction-text {
+  justify-items: center;
+  padding-top: 2rem;
+}
+
+.attraction-text h3 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.attraction-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  width: 12rem;
+  text-align: center;
+  opacity: 50%;
+}
