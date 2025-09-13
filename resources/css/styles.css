@@ -273,3 +273,35 @@ header {
   text-align: center;
   opacity: 50%;
 }
+
+/* Club facilities Style */
+.club-facilities-container {
+  padding: 5rem 0rem;
+}
+
+.club-facilities-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.club-facilities-heading span {
+  color: var(--color-mint-green);
+  border: 1px solid var(--color-mint-green);
+  font-weight: 300;
+  border-radius: 2rem;
+  padding: 0.01rem 0.6rem;
+}
+
+.club-facilities-heading h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-mint-green);
+}
+
+.club-facilities {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
