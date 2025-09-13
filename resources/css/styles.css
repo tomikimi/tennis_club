@@ -305,3 +305,15 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
+
+.club-facility {
+  width: 25%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.club-facility img {
+  max-width: 95%;
+  height: inherit;
+  display: block;
+}
