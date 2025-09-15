@@ -304,9 +304,11 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 3rem;
 }
 
 .club-facility {
+  position: relative;
   width: 25%;
   height: 220px;
   overflow: hidden;
@@ -316,4 +318,33 @@ header {
   max-width: 95%;
   height: inherit;
   display: block;
+  border-radius: 1rem;
+}
+
+.club-facility div {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  right: 7%;
+  background-color: #cdcdcd;
+  opacity: 90%;
+  border-radius: 0.7rem;
+  padding: 0.5rem 0.6rem;
+}
+
+.club-facility span {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  color: var(--color-white);
+  border: 1.3px solid var(--color-white);
+  font-weight: 200;
+  font-size: 0.6rem;
+  border-radius: 2rem;
+  padding: 0.1rem 0.4rem;
+}
+
+.club-facility p {
+  font-size: 1.05rem;
+  font-weight: 200;
+  color: var(--color-white);
 }
