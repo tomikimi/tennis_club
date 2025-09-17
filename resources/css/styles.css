@@ -348,3 +348,110 @@ header {
   font-weight: 200;
   color: var(--color-white);
 }
+
+/* Club Plan Style */
+.club-plans-container {
+  padding: 5rem 0rem;
+}
+
+.club-plan-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.club-plan-header p {
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.club-plan-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+
+.club-plan-image {
+  width: 50%;
+  height: 721px;
+  overflow: hidden;
+}
+
+.club-plan-image img {
+  width: 95%;
+  height: auto;
+  display: block;
+  border-radius: 1.2rem;
+  filter: brightness(0.5);
+}
+
+.club-plan-image {
+  position: relative;
+}
+
+.btn-popular {
+  position: absolute;
+  top: 3rem;
+  left: 1.5rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 1rem;
+}
+
+.club-plan-text {
+  position: absolute;
+  top: 12rem;
+  left: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.club-plan-text > .plan-expiry {
+  color: var(--color-white);
+  padding: 0.2rem 0.6rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--color-light-grey);
+  border-radius: 1rem;
+}
+
+.club-plan-text > .plan-season {
+  margin-top: 1.5rem;
+  font-size: 2.5rem;
+  color: var(--color-light-grey);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.club-plan-text > .plan-package {
+  font-size: 2.5rem;
+  color: var(--color-light-grey);
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.club-plan-text > .plan-training {
+  font-size: 1.2rem;
+  color: var(--color-light-grey);
+  margin-bottom: 1rem;
+}
+
+.club-plan-text > .btn-price {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.5rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 2rem;
+}
+
+.btn-price span {
+  font-size: 0.8rem;
+}
