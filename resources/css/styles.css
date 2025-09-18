@@ -46,7 +46,8 @@ header {
 
 .navigation2 {
   position: fixed;
-  background-color: transparent;
+  background-color: var(--color-dark-green);
+  width: 100%;
   padding: 2rem 0rem;
   display: flex;
   align-items: center;
@@ -92,7 +93,7 @@ header {
   cursor: pointer;
   text-decoration: none;
   font-size: 1rem;
-  color: var(--color-white);
+  color: var(--color-lime);
 }
 
 .navigation2 ul li:not(:last-of-type) a:hover {
@@ -113,7 +114,7 @@ header {
 }
 
 .hero-container {
-  height: 100vh;
+  /* height: 100vh; */
   /* position: relative; */
   display: flex;
 }
@@ -226,12 +227,18 @@ header {
   background-color: var(--color-light-grey);
 }
 
+.club-attraction-container,
+.club-facilities-container,
+.club-plans-container,
+.club-teams-container {
+  padding: 5rem 0rem;
+}
+
 /* Club Attractions Style */
 .club-attraction-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5rem 0rem;
 }
 
 .club-attraction {
@@ -275,9 +282,6 @@ header {
 }
 
 /* Club facilities Style */
-.club-facilities-container {
-  padding: 5rem 0rem;
-}
 
 .club-facilities-heading {
   display: inline-flex;
@@ -350,9 +354,6 @@ header {
 }
 
 /* Club Plan Style */
-.club-plans-container {
-  padding: 5rem 0rem;
-}
 
 .club-plan-header {
   display: flex;
@@ -454,4 +455,9 @@ header {
 
 .btn-price span {
   font-size: 0.8rem;
+}
+
+/* Club Team Style */
+.club-teams-container {
+  padding: 5rem 0rem;
 }
