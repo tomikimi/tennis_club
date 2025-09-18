@@ -461,3 +461,75 @@ header {
 .club-teams-container {
   padding: 5rem 0rem;
 }
+
+.club-team-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.club-team-header h3 {
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+
+.club-team-header p {
+  font-size: 1rem;
+  line-height: 1.1;
+}
+
+.club-teams-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4rem 0rem;
+}
+
+.club-team-image {
+  position: relative;
+  width: 25%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.club-team-image img {
+  width: 95%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+}
+
+.club-team-detail {
+  position: absolute;
+  top: 55%;
+  left: 2%;
+  right: 7%;
+  background-color: #cdcdcd;
+  opacity: 90%;
+  border-radius: 1.4rem;
+  padding: 0.5rem 0.6rem;
+}
+
+.club-team-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.club-team-detail > .club-team-name,
+.club-team-designation {
+  color: var(--color-white);
+  line-height: 1.4;
+}
+
+.club-team-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.club-team-designation {
+  font-size: 0.6rem;
+}
