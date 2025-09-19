@@ -543,3 +543,98 @@ header {
   display: inline-flex;
   align-items: center;
 }
+
+/* Responsive Style */
+
+/* Responsive Style   */
+
+@media only screen and (max-width: 768px) {
+  .club-attraction-container,
+  .club-facilities-container,
+  .club-plans-container,
+  .club-teams-container {
+    padding: 3rem 0rem;
+  }
+
+  .navigation2 {
+    gap: 4rem;
+  }
+
+  .navigation2 ul li:not(:last-of-type) {
+    padding-left: 3.2rem;
+  }
+
+  .navigation2 ul li:last-of-type {
+    padding-left: 5rem;
+  }
+
+  .btn-link2 {
+    padding: 0.4rem 1rem;
+  }
+
+  .logo2 {
+    padding-left: 1.3rem;
+  }
+
+  .hero-text {
+    padding: 0rem 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .location-img,
+  .contact-img {
+    padding: 0.8rem 0.7rem;
+    width: 30%;
+    height: 40px;
+  }
+
+  .attraction-img {
+    padding: 1.1rem 0.8rem;
+    width: 25%;
+    height: 58px;
+  }
+
+  .attraction-img img {
+    width: 80%;
+  }
+
+  .club-facilities {
+    gap: 1rem;
+  }
+
+  .club-facility {
+    width: 48.75%;
+  }
+
+  .club-facility img {
+    max-width: 100%;
+  }
+
+  .club-plan-image {
+    height: 408px;
+  }
+
+  .btn-popular {
+    top: 1.8rem;
+  }
+
+  .club-plan-text {
+    top: 7rem;
+    left: 4rem;
+  }
+
+  .club-teams-images {
+    gap: 1rem;
+  }
+
+  .club-team-image {
+    width: 48.75%;
+  }
+
+  .club-team-detail {
+    top: 65%;
+  }
+}
