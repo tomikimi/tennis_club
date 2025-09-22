@@ -55,6 +55,10 @@ header {
   z-index: 200;
 }
 
+.mobile {
+  display: none;
+}
+
 .logo2 {
   padding-left: 2rem;
 }
@@ -636,5 +640,183 @@ header {
 
   .club-team-detail {
     top: 65%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    width: fit-content;
+  }
+  .navigation2 {
+    display: none;
+  }
+  .mobile {
+    position: fixed;
+    background-color: var(--color-dark-green);
+    width: 100%;
+    padding: 2rem 0rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    z-index: 200;
+  }
+
+  .mobile > ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile > ul > li > a > img {
+    width: 1.5rem;
+  }
+
+  .mobile ul li:not(:last-of-type) {
+    padding-left: 3rem;
+  }
+
+  .mobile ul li:last-of-type {
+    padding-left: 5.2rem;
+  }
+
+  .mobile ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--color-lime);
+  }
+
+  .mobile ul li:not(:last-of-type) a:hover {
+    color: var(--color-lime);
+  }
+
+  .btn-link2 {
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    background-color: var(--color-mint-green);
+    box-shadow: 0rem 0rem 0.5rem 0.1rem var(--color-light-grey);
+  }
+
+  .btn-link2:hover {
+    background-color: var(--color-light-grey);
+    color: var(--color-mint-green);
+    box-shadow: 0rem 0rem 0.5rem 0.1rem var(--color-lime);
+  }
+
+  .hero-container {
+    justify-content: center;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+  }
+
+  .hero-img-container {
+    display: none;
+  }
+  .location-img {
+    padding: 1.2rem 2rem;
+    width: 40%;
+    height: 70px;
+  }
+
+  .contact-img {
+    padding: 1.2rem 1.3rem;
+    width: 40%;
+    height: 70px;
+  }
+
+  .location-img img {
+    justify-self: center;
+    max-width: 2.2rem;
+  }
+
+  .contact-img img {
+    justify-self: center;
+    max-width: 2.2rem;
+  }
+
+  .location h4 {
+    font-size: 1.2rem;
+  }
+
+  .location p {
+    font-size: 1.05rem;
+  }
+
+  .contact h4 {
+    font-size: 1.2rem;
+  }
+
+  .contact p {
+    font-size: 1.05rem;
+  }
+
+  .attraction-img {
+    padding: 1rem 0.4rem;
+    width: 30%;
+  }
+
+  .attraction-img img {
+    width: 55%;
+  }
+
+  .club-facilities-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .club-facility {
+    width: 59.75%;
+  }
+
+  .club-facility span {
+    font-size: 0.9rem;
+  }
+
+  .club-plan-text {
+    top: 6rem;
+    left: 2rem;
+  }
+
+  .plan-season {
+    font-size: 2rem;
+  }
+
+  .plan-package {
+    font-size: 2rem;
+  }
+
+  .club-team-image {
+    width: 54.75%;
+  }
+
+  .club-team-name {
+    font-size: 1.3rem;
+  }
+  .club-team-designation {
+    font-size: 0.9rem;
+  }
+
+  .club-teams-container {
+    padding-bottom: 0rem;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .mobile {
+    gap: 3rem;
+  }
+
+  .mobile > ul > li > a > img {
+    width: 2rem;
   }
 }
